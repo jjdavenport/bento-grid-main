@@ -5,6 +5,7 @@ import create from "./components/assets/illustration-create-post.webp";
 import stars from "./components/assets/illustration-five-stars.webp";
 import grow from "./components/assets/illustration-grow-followers.webp";
 import platforms from "./components/assets/illustration-multiple-platforms.webp";
+import posts from "./components/assets/illustration-schedule-posts.webp";
 import Create from "./components/create";
 import Faster from "./components/faster";
 import Grow from "./components/grow";
@@ -18,14 +19,14 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-      <main>
-        <Create icon={create} />
-        <Faster icon={growth} />
-        <Grow icon={grow} />
-        <Maintain icon={schedule} />
-        <Manage icon={platforms} />
-        <Schedule icon={schedule} />
+      <main className="bg-bg flex flex-col gap-8 p-4 font-custom text-lg">
         <Social icon={stars} />
+        <Manage icon={platforms} />
+        <Maintain icon={schedule} />
+        <Schedule icon={posts} />
+        <Grow icon={grow} />
+        <Faster icon={growth} />
+        <Create icon={create} />
         <Write icon={ai} />
       </main>
       <Footer />
