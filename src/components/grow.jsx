@@ -1,8 +1,8 @@
-const Grow = ({ icon }) => {
+const Grow = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-purple500 rounded-xl p-4">
-        <img src={icon} />
+      <article className={className}>
+        <img className="w-1/2" src={icon} />
         <h5>Grow followers with non-stop content.</h5>
       </article>
     </>

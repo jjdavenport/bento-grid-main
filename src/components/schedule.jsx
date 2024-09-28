@@ -1,7 +1,7 @@
-const Schedule = ({ icon }) => {
+const Schedule = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-purple100 rounded-xl p-4">
+      <article className={className}>
         <h4>Schedule to social media.</h4>
         <img src={icon} />
         <p>

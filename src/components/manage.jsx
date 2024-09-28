@@ -1,7 +1,7 @@
-const Manage = ({ icon }) => {
+const Manage = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-yellow100 rounded-xl p-4">
+      <article className={className}>
         <img src={icon} />
         <h2> Manage multiple accounts and platforms.</h2>
       </article>

@@ -1,7 +1,7 @@
-const Maintain = ({ icon }) => {
+const Maintain = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-yellow500 rounded-xl pl-4 pt-4">
+      <article className={className}>
         <h3>Maintain a consistent posting schedule.</h3>
         <img src={icon} />
       </article>

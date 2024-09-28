@@ -1,7 +1,7 @@
-const Write = ({ icon }) => {
+const Write = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-yellow500 rounded-xl p-4">
+      <article className={className}>
         <span>Write your content using AI.</span>
         <img src={icon} />
       </article>

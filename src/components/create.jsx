@@ -1,7 +1,7 @@
-const Create = ({ icon }) => {
+const Create = ({ icon, className }) => {
   return (
     <>
-      <article className="bg-yellow100 rounded-xl p-4">
+      <article className={className}>
         <span>Create and schedule content quicker.</span>
         <img src={icon} />
       </article>

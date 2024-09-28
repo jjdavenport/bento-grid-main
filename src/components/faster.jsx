@@ -1,7 +1,7 @@
-const Faster = ({ icon }) => {
+const Faster = ({ icon, className }) => {
   return (
     <>
-      <article className="rounded-xl bg-white p-4">
+      <article className={className}>
         <h6>56% faster audience growth</h6>
         <img src={icon} />
       </article>
