@@ -3,7 +3,9 @@ const Manage = ({ icon, className }) => {
     <>
       <article className={className}>
         <img src={icon} />
-        <h2> Manage multiple accounts and platforms.</h2>
+        <h2 className="text-2xl font-medium text-black">
+          Manage multiple accounts and platforms.
+        </h2>
       </article>
     </>
   );
