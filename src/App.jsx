@@ -19,41 +19,45 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-      <main className="bg-main flex flex-col gap-8 p-4 font-custom text-lg font-normal md:grid md:grid-cols-4 md:grid-rows-6 md:gap-4">
-        <Social
-          icon={stars}
-          className="col-span-2 row-span-2 flex flex-col items-center justify-center gap-4 rounded-xl bg-purple500 p-8 text-center text-white"
-        />
-        <Manage
-          icon={platforms}
-          className="row-span-2 flex flex-col gap-2 rounded-xl bg-white p-4"
-        />
-        <Maintain
-          icon={schedule}
-          className="row-span-2 flex flex-col gap-2 rounded-xl bg-yellow500 pl-4 pt-4"
-        />
-        <Schedule
-          icon={posts}
-          className="col-start-4 row-span-4 row-start-1 flex flex-col gap-4 rounded-xl bg-purple100 p-4 py-6 text-center"
-        />
-        <Grow
-          icon={grow}
-          className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 p-4 py-6 text-center"
-        />
-        <Faster
-          icon={growth}
-          className="col-start-2 row-span-2 row-start-5 flex flex-col gap-4 rounded-xl bg-white p-6"
-        />
-        <Create
-          icon={create}
-          className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 p-6"
-        />
-        <Write
-          icon={ai}
-          className="col-start-1 row-span-3 row-start-4 flex flex-col gap-4 rounded-xl bg-yellow500 p-6"
-        />
-      </main>
-      <Footer />
+      <div className="flex h-full min-h-screen flex-col bg-main md:justify-between">
+        <div className="flex flex-1 items-center justify-center ~md/xl:~px-2/24 ~md/xl:~py-2/12">
+          <main className="max-w-screen-lgx flex flex-col font-custom text-lg font-normal leading-none ~p-4/0 ~md/lg:~gap-4/8 md:grid md:grid-cols-4 md:grid-rows-6">
+            <Social
+              icon={stars}
+              className="col-span-2 row-span-2 flex flex-col items-center justify-center gap-4 rounded-xl bg-purple500 p-8 text-center text-white"
+            />
+            <Manage
+              icon={platforms}
+              className="row-span-2 flex flex-col gap-2 rounded-xl bg-white p-4 md:justify-between"
+            />
+            <Maintain
+              icon={schedule}
+              className="row-span-2 flex flex-col gap-2 overflow-hidden rounded-xl bg-yellow500 pl-4 pr-4 pt-4 md:items-center md:justify-between"
+            />
+            <Schedule
+              icon={posts}
+              className="relative col-start-4 row-span-4 row-start-1 flex flex-col gap-4 overflow-hidden rounded-xl bg-purple100 p-4 py-6 text-center md:p-0 md:py-10 md:pl-4 md:text-left"
+            />
+            <Grow
+              icon={grow}
+              className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 text-center ~sm/xl:~p-8/6 md:flex-row md:text-left"
+            />
+            <Faster
+              icon={growth}
+              className="col-start-2 row-span-2 row-start-5 flex flex-col justify-between gap-4 rounded-xl bg-white p-6"
+            />
+            <Create
+              icon={create}
+              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 p-6 md:justify-center"
+            />
+            <Write
+              icon={ai}
+              className="col-start-1 row-span-3 row-start-4 flex flex-col justify-between gap-4 rounded-xl bg-yellow500 p-6"
+            />
+          </main>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }

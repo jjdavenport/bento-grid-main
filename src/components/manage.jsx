@@ -2,8 +2,8 @@ const Manage = ({ icon, className }) => {
   return (
     <>
       <article className={className}>
-        <img src={icon} />
-        <h2 className="text-2xl font-medium text-black">
+        <img className="object-contain" src={icon} />
+        <h2 className="font-medium ~md/lg:~text-2xl/4xl md:text-3xl">
           Manage multiple accounts and platforms.
         </h2>
       </article>
