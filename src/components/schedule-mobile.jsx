@@ -3,7 +3,7 @@ const Schedule = ({ icon, className }) => {
     <>
       <article className={className}>
         <div className="flex flex-col gap-4">
-          <h4 className="font-semibold ~md/xl:~text-2xl/4xl">
+          <h4 className="font-medium tracking-tighter ~md/xl:~text-2xl/4xl">
             Schedule to social media.
           </h4>
           <img src={icon} />

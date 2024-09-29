@@ -2,7 +2,7 @@ const Maintain = ({ icon, className }) => {
   return (
     <>
       <article className={className}>
-        <h3 className="font-semibold ~md/xl:~text-2xl/4xl">
+        <h3 className="font-medium tracking-tighter ~md/xl:~text-2xl/4xl">
           Maintain a consistent posting schedule.
         </h3>
         <img

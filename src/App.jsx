@@ -23,11 +23,11 @@ function App() {
   return (
     <>
       <div className="flex h-full min-h-screen flex-col bg-main md:justify-between">
-        <div className="flex flex-1 items-center justify-center ~md/xl:~px-2/24 ~md/xl:~py-2/12">
-          <main className="max-w-screen-lgx flex flex-col font-custom text-lg font-normal leading-none tracking-tighter ~p-4/0 ~md/lg:~gap-4/8 md:grid md:grid-cols-4 md:grid-rows-6">
+        <div className="flex flex-1 items-center justify-center">
+          <main className="max-w-screen-lgx flex flex-col font-custom text-lg font-normal leading-6 ~p-4/0 ~md/lg:~gap-4/8 md:grid md:max-h-[56rem] md:grid-cols-4 md:grid-rows-6">
             <Social
               icon={stars}
-              className="col-span-2 row-span-2 flex flex-col items-center justify-center gap-4 rounded-xl bg-purple500 p-8 text-center text-white"
+              className="col-span-2 row-span-2 flex flex-col items-center justify-center gap-4 rounded-xl bg-purple500 p-8 text-center leading-none text-white"
             />
             <Manage
               icon={platforms}
@@ -35,12 +35,12 @@ function App() {
             />
             <Maintain
               icon={schedule}
-              className="row-span-2 flex flex-col gap-2 overflow-hidden rounded-xl bg-yellow500 ~md/xl:~pt-4/8 ~md/xl:~pr-4/8 ~md/xl:~pl-4/8 md:items-center md:justify-between"
+              className="row-span-2 flex flex-col gap-2 overflow-hidden rounded-xl bg-yellow500 ~md/xl:~pt-4/6 ~md/xl:~pr-4/8 ~md/xl:~pl-4/8 md:items-center md:justify-between md:gap-0"
             />
             {desktop ? (
               <ScheduleDesktop
                 icon={posts}
-                className="relative col-start-4 row-span-4 row-start-1 flex flex-col gap-4 overflow-hidden rounded-xl bg-purple100 p-4 py-6 text-center md:p-0 md:text-left"
+                className="relative col-start-4 row-span-4 row-start-1 flex flex-col justify-center gap-4 overflow-hidden rounded-xl bg-purple100 p-4 py-6 text-center md:p-0 md:text-left"
               />
             ) : (
               <ScheduleMobile
@@ -51,19 +51,19 @@ function App() {
 
             <Grow
               icon={grow}
-              className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 text-center ~sm/xl:~p-8/6 md:flex-row md:text-left"
+              className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 text-center ~sm/xl:~p-8/6 md:flex-row md:gap-2 md:text-left"
             />
             <Faster
               icon={growth}
-              className="col-start-2 row-span-2 row-start-5 flex flex-col justify-between gap-4 rounded-xl bg-white p-6"
+              className="col-start-2 row-span-2 row-start-5 flex flex-col justify-between gap-4 rounded-xl bg-white p-6 md:gap-0"
             />
             <Create
               icon={create}
-              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 ~md/xl:~p-4/8 md:justify-center"
+              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 ~md/xl:~px-4/8 md:justify-center"
             />
             <Write
               icon={ai}
-              className="col-start-1 row-span-3 row-start-4 flex flex-col justify-between gap-4 rounded-xl bg-yellow500 p-6"
+              className="col-start-1 row-span-3 row-start-4 flex flex-col justify-between gap-4 rounded-xl bg-yellow500 p-6 md:gap-0"
             />
           </main>
         </div>
