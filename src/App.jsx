@@ -48,7 +48,7 @@ function App() {
             />
             <Create
               icon={create}
-              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 p-6 md:justify-center"
+              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 p-4 md:justify-center md:p-6"
             />
             <Write
               icon={ai}

@@ -2,7 +2,7 @@ const Schedule = ({ icon, className }) => {
   return (
     <>
       <article className={className}>
-        <div className="-mr-40 flex flex-col gap-4">
+        <div className="flex flex-col gap-4 md:-mr-40">
           <h4 className="font-medium ~md/lg:~text-2xl/3xl md:w-4/6">
             Schedule to social media.
           </h4>
