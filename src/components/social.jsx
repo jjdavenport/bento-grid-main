@@ -2,7 +2,7 @@ const Social = ({ icon, className }) => {
   return (
     <>
       <article className={className}>
-        <h1 className="font-medium ~md/xl:~text-4xl/5xl">
+        <h1 className="font-medium ~md/xl:~text-4xl/6xl">
           Social Media <span className="text-yellow500">10x</span> Faster with
           AI
         </h1>
