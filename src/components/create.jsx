@@ -2,7 +2,7 @@ const Create = ({ icon, className }) => {
   return (
     <>
       <article className={className}>
-        <span className="font-medium tracking-tighter ~md/xl:~text-3xl/4xl">
+        <span className="text-threeFour font-medium leading-8 tracking-tighter">
           Create and schedule content{" "}
           <em className="text-purple500">quicker.</em>
         </span>

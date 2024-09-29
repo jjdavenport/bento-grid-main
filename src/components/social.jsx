@@ -3,8 +3,8 @@ const Social = ({ icon, className }) => {
     <>
       <article className={className}>
         <h1 className="font-medium ~md/xl:~text-4xl/6xl">
-          Social Media <span className="text-yellow500">10x</span> Faster with
-          AI
+          Social Media <span className="text-yellow500">10x</span>{" "}
+          <em>Faster</em> with AI
         </h1>
         <div className="flex flex-col items-center gap-2">
           <img className="w-1/2" src={icon} />

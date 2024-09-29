@@ -3,7 +3,7 @@ const Grow = ({ icon, className }) => {
     <>
       <article className={className}>
         <img className="w-4/6 md:w-6/12" src={icon} />
-        <h5 className="font-medium text-white ~md/xl:~text-2xl/4xl">
+        <h5 className="text-twoFour font-medium leading-9 text-white">
           Grow followers with non-stop content.
         </h5>
       </article>

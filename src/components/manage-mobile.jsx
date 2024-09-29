@@ -5,7 +5,7 @@ const Manage = ({ icon, className }) => {
         <div className="md:h-20">
           <img className="object-contain md:absolute" src={icon} />
         </div>
-        <h2 className="font-medium tracking-tighter ~md/xl:~text-2xl/4xl md:max-w-60 md:flex-1">
+        <h2 className="text-twoFour font-medium leading-8 tracking-tighter md:flex-1">
           Manage multiple accounts and platforms.
         </h2>
       </article>

@@ -9,6 +9,10 @@ export default {
   theme: {
     screens,
     extend: {
+      fontSize: {
+        twoFour: ["clamp(1.5rem, 0.38rem + 2.34vw, 2.25rem)"],
+        threeFour: ["clamp(1.875rem, 1.313rem + 1.172vw, 2.25rem)"],
+      },
       fontFamily: {
         custom: ["dm sans", "sans-serif"],
       },

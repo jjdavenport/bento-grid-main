@@ -10,12 +10,13 @@ import Create from "./components/create";
 import Faster from "./components/faster";
 import Grow from "./components/grow";
 import Maintain from "./components/maintain";
-import Manage from "./components/manage";
-import ScheduleDesktop from "./components/schedule-dekstop";
+import ManageDesktop from "./components/manage-desktop";
+import ScheduleDesktop from "./components/schedule-desktop";
 import Social from "./components/social";
 import Write from "./components/write";
 import Footer from "./components/footer";
 import ScheduleMobile from "./components/schedule-mobile";
+import ManageMobile from "./components/manage-mobile";
 import { useMediaQuery } from "react-responsive";
 
 function App() {
@@ -24,15 +25,22 @@ function App() {
     <>
       <div className="flex h-full min-h-screen flex-col bg-main md:justify-between">
         <div className="flex flex-1 items-center justify-center">
-          <main className="max-w-screen-lgx flex flex-col font-custom text-lg font-normal leading-6 ~p-4/0 ~md/lg:~gap-4/8 md:grid md:max-h-[56rem] md:grid-cols-4 md:grid-rows-6">
+          <main className="max-w-screen-lgx flex flex-col font-custom text-lg font-normal leading-6 ~md/lg:~gap-4/8 ~md/xl:~px-4/0 ~md/xl:~py-4/16 md:grid md:max-h-[62rem] md:grid-cols-4 md:grid-rows-6">
             <Social
               icon={stars}
               className="col-span-2 row-span-2 flex flex-col items-center justify-center gap-4 rounded-xl bg-purple500 p-8 text-center leading-none text-white"
             />
-            <Manage
-              icon={platforms}
-              className="relative row-span-2 flex flex-col overflow-hidden rounded-xl bg-white p-4 md:justify-between md:pl-6 md:pr-0 md:pt-6"
-            />
+            {desktop ? (
+              <ManageDesktop
+                icon={platforms}
+                className="relative row-span-2 flex flex-col overflow-hidden rounded-xl bg-white p-4 md:justify-between md:pl-6 md:pr-0 md:pt-6"
+              />
+            ) : (
+              <ManageMobile
+                icon={platforms}
+                className="relative row-span-2 flex flex-col overflow-hidden rounded-xl bg-white p-4 md:justify-between md:pl-6 md:pr-0 md:pt-6"
+              />
+            )}
             <Maintain
               icon={schedule}
               className="row-span-2 flex flex-col gap-2 overflow-hidden rounded-xl bg-yellow500 ~md/xl:~pt-4/6 ~md/xl:~pr-4/8 ~md/xl:~pl-4/8 md:items-center md:justify-between md:gap-0"
@@ -51,7 +59,7 @@ function App() {
 
             <Grow
               icon={grow}
-              className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 text-center ~sm/xl:~p-8/6 md:flex-row md:gap-2 md:text-left"
+              className="col-span-2 col-start-3 row-span-2 flex flex-col items-center gap-6 rounded-xl bg-purple500 p-6 text-center md:flex-row md:gap-2 md:pr-1 md:text-left"
             />
             <Faster
               icon={growth}
@@ -59,7 +67,7 @@ function App() {
             />
             <Create
               icon={create}
-              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 ~md/xl:~px-4/8 md:justify-center"
+              className="col-start-1 row-span-3 row-start-1 flex flex-col gap-4 rounded-xl bg-yellow100 ~md/xl:~px-4/8 ~md/xl:~py-8/0 md:justify-center"
             />
             <Write
               icon={ai}
