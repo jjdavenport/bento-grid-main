@@ -28,7 +28,7 @@ function App() {
             />
             <Manage
               icon={platforms}
-              className="row-span-2 flex flex-col gap-2 rounded-xl bg-white p-4 md:justify-between"
+              className="relative row-span-2 flex flex-col gap-2 overflow-hidden rounded-xl bg-white p-4 md:justify-between md:pl-6 md:pr-0 md:pt-6"
             />
             <Maintain
               icon={schedule}
@@ -36,7 +36,7 @@ function App() {
             />
             <Schedule
               icon={posts}
-              className="relative col-start-4 row-span-4 row-start-1 flex flex-col gap-4 overflow-hidden rounded-xl bg-purple100 p-4 py-6 text-center md:p-0 md:py-10 md:pl-4 md:text-left"
+              className="relative col-start-4 row-span-4 row-start-1 flex flex-col gap-4 overflow-hidden rounded-xl bg-purple100 p-4 py-6 text-center md:py-10 md:text-left"
             />
             <Grow
               icon={grow}
